@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore different type of Selectors</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        p{
+            color: red;
+        }
+        #five {
+            font-size: 1.5rem;
+        }
+        .same{
+            background-color: yellowgreen;
+        }
+        .bold {
+            font-weight: bolder;
+        }
+        ul li {
+            color: rgb(0, 129, 168);
+        }
+        input{
+            font-size: 1.3rem;
+        }
+        h1 span {
+            color: tomato;
+        }
+
+        /* Attribute Selector  */
+        input[type="text"] {
+            color: red;
+        }
+
+        .blog{
+            background-color: aqua;
+            width: 50%;
+        }
+        .blog p{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore different types of <span>selectors</span></h1>
+    <p>This is first selectors</p>
+    <p>This is second selectors</p>
+    <p class="same bold">This is third selectors</p>
+    <p class="same">This is fourth selectors</p>
+    <p id="five">This is five selectors</p>
+    <p class="bold">This is six selectors</p>
+    <p>This is seven selectors</p>
+
+    <ul>
+        <li>Element Selector</li>
+        <li>Id Selector</li>
+        <li>Class Selector</li>
+        <li>Universal Selector</li>
+        <li>Multiple Selector</li>
+        <li>Attribute Selector</li>
+    </ul>
+    <br>
+    <div class="blog">
+        <h2>My blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis aliquid impedit fugit porro nostrum nulla cum voluptas! Suscipit quos perferendis facilis dolorem iste enim velit quo porro, tempore nisi omnis ipsum? Sit, cumque voluptatibus? Aut cumque impedit fuga labore at recusandae harum. Illum eaque corporis magnam totam reiciendis rerum?</p>
+    </div>
+    <br>
+    <form action="#" method="get">
+        <input type="text" name="" id=""><br><br>
+        <input type="email" name="" id=""><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Delete">
+    </form>
+</body>
+</html>
