@@ -63,3 +63,49 @@ header h1{
 }
 .second_audio audio{}
 .second_audio a{}
+
+
+
+.iframe_1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.iframe_1 h2{
+    padding: 10px 0px;
+    text-align: c;
+    background-color: #e74c3c;
+    color: white;
+    margin: 20px 0px;
+}
+.iframe_1 .first_iframe {
+    display: inline-block;
+}
+.iframe_1 .first_iframe iframe{
+    border: 5px solid #e74c3c;
+}
+.iframe_1 iframe{}
+.iframe_1 .second_iframe{
+    display: inline-block;
+}
+
+
+
+.iframe_2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+.ph_iframe iframe {
+    margin-bottom: -4px;
+}
+.ph_iframe {
+    display: inline-block;
+    border: 2px solid;
+}
+.btn_iframe {
+    background: #7fabff;
+    padding: 5px 0px;
+}
+.btn_iframe a {
+    text-decoration: none;
+    color: black;
+}
