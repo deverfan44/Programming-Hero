@@ -61,3 +61,17 @@ select#dis {
 .form_btn *:nth-child(2){
     background-color: #c0392b;
 }
+
+select#dis {
+    margin-bottom: 10px;
+}
+
+.txtarea{}
+.txtarea label{
+    margin-bottom: 5px !important;
+}
+.txtarea textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
