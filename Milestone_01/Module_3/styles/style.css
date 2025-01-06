@@ -6,11 +6,11 @@
 }
 
 
-header{
+.main_title{
     padding: 20px 0px;
     background-color: #e74c3c;
 }
-header h1{
+.main_title h1{
     text-align: center;
     color: white;
 }

@@ -1,0 +1,63 @@
+.form_section{}
+.form_div {
+    width: 40%;
+    margin: 30px auto;
+    background: #0c7e7efa;
+    padding: 30px;
+    border-radius: 4px;
+}
+/* .form_div fieldset {
+    padding: 20px;
+}
+.form_div fieldset legend{
+    font-size: 20px;
+} */
+.form_div form{}
+.form_div form input {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    outline: 0 !important;
+    /* border: 1px solid black; */
+    border: none;
+    outline: none;
+}
+.form_div form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.sex > label{
+    display: inline-block !important;
+}
+.sex > input {
+    width: 4% !important;
+}
+
+select#dis {
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.form_btn{
+    margin-top: 20px;
+}
+.form_btn button{
+    border: none;
+    padding:6px 15px;
+    font-size: 20px;
+    color: white;
+}
+.form_btn :first-child{
+    background-color: #3498db;
+}
+.form_btn *:nth-child(2){
+    background-color: #c0392b;
+}

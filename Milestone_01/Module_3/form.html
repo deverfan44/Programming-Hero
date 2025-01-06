@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_div">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="#">Optional</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form_section">
+            <div class="form_div">
+                <form action="#">
+                    <label for="fname">First name: <br>
+                        <input type="text" name="firstname" id="fname">
+                    </label>
+                    <label for="lname">Last name: <br>
+                        <input type="text" name="lastname" id="lname" required>
+                    </label>
+                    <label for="email">Email: <br>
+                        <input type="email" name="email" id="email" placeholder="Type your valid email">
+                    </label>
+                    <label for="photo">Upload your photo: <br>
+                        <input type="file" name="picture" id="photo">
+                    </label>
+                    <label for="ytlink">Youtube link: <br>
+                        <input type="url" name="youtube link" id="ytlink">
+                    </label>
+                    <div class="sex">
+                        <p style="font-size: 18px; color: white;">Gender</p>
+                        <input type="radio" name="sex" id="male" value="male"><label for="male">Male</label>
+                        <input type="radio" name="sex" id="female" value="female"><label for="female">Female</label>
+                    </div>
+                    <p style="font-size: 18px; color: white;">District:</p>
+                    <select name="district" id="dis">
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Rangpur">Rangpur</option>
+                    </select>
+
+                    <div class="form_btn">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

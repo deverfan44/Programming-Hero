@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav {
+    background: #2ecc71;
+    padding: 8px 0px;
+}
+nav  ul {
+    display: flex;
+}
+nav ul > li {
+    list-style: none;
+}
+nav ul > li a {
+    text-decoration: none;
+    padding: 9px 34px;
+    display: inline-block;
+    /* background: #34495e; */
+    color: white;
+}
+nav ul > li a:hover{
+    background: #34495e;
+}
+nav .nav_div {
+    width: 34%;
+    margin: auto;
+}
