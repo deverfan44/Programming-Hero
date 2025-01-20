@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-section{}
-.elipsis {}
-.elipsis h3{}
 .elipsis p {
     width: 500px;
     border: 1px solid black;
@@ -15,4 +12,78 @@ section{}
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.transform{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    background-color: aqua;
+}
+.sm_div{
+    flex-basis: 30%;
+    height: 200px;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.transform .div1 {
+    transform: translate(-100px, -50px);
+}
+.transform .div2 {
+    transform: rotate(45deg) translate(62px, 109px);
+}
+/* don't use comma  */
+.transform .div3 {
+    transform: scale(0.7);
+}
+
+
+.transform2{
+    width: 70%;
+    margin: 200px auto 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    background-color: aqua;
+}
+
+.transform2 .div1{
+    /* transition: 3s ease 2s; */
+    transition: transform 1s linear;
+    /* duration || timing function || delay  */
+}
+.transform2 .div1:hover{
+    transform: scale(1.5);
+}
+.transform2 .div2{
+    transition: transform 1s ease;
+}
+.transform2 .div2:hover{
+    transform: rotate(45deg) scale(1.2);
+}
+.transform2 .div3{
+    transition: transform 1s ease-in;
+}
+.transform2 .div3:hover{
+    transform: translateX(100px);
+}
+
+
+
+.text_div{
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    transition: width 1s linear, background-color 3s ease;
+}
+.text_div:hover{
+    width: 700px;
+    background-color: yellow;
 }
