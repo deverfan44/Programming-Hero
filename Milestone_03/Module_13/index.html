@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Talwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .practice_1{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            /* hyphens: auto; */
+            /* word-wrap: break-word; */
+        }
+    </style>
+</head>
+<body>
+    <!-- font size -->
+    <div class="font_size">
+        <h1 class="text-xs">My country is Bangladesh</h1>
+        <h1 class="text-sm">My country is Bangladesh</h1>
+        <h1 class="text-base">My country is Bangladesh</h1>
+        <h1 class="text-lg">My country is Bangladesh</h1>
+        <h1 class="text-xl">My country is Bangladesh</h1>
+        <h1 class="text-2xl">My country is Bangladesh</h1>
+        <h1 class="text-3xl">My country is Bangladesh</h1>
+        <h1 class="text-4xl">My country is Bangladesh</h1>
+        <h1 class="text-5xl italic">My country is Bangladesh</h1>
+        <h1 class="text-7xl hover:text-4xl">My country is Bangladesh</h1>
+    </div>
+
+    <div class="mt-20">
+        <!-- font weight  -->
+        <h1 class="font-thin hover:font-bold">My country is Bangladesh</h1>
+        <h1 class="font-extralight">My country is Bangladesh</h1>
+        <h class="font-light">My country is Bangladesh</h>
+        <h1 class="font-normal">My country is Bangladesh</h1>
+        <h1 class="font-medium line-through decoration-red-900">My country is Bangladesh</h1>
+        <h1 class="font-semibold">My country is Bangladesh</h1>
+        <h1 class="font-bold">My country is Bangladesh</h1>
+        <h1 class="font-extrabold text-center hover:underline decoration-red-900 decoration-double">My country is Bangladesh</h1>
+        <h1 class="font-black">My country is Bangladesh</h1>
+
+        <!-- font normal  -->
+        <h1 class="tracking-tight">My country is Bangladesh</h1>
+        <h1 class="tracking-normal">My country is Bangladesh</h1>
+        <h1 class="tracking-wide">My country is Bangladesh</h1>
+
+        <p class="leading-4 hover:leading-loose text-sky-900">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim doloribus voluptas neque aut id consequuntur odio sunt doloremque illum voluptatibus iste unde assumenda aliquam aliquid ut, quae dolores dolorem dignissimos nostrum ipsam! Dolores quasi id ab nemo temporibus molestiae reprehenderit, similique labore veniam voluptates est exercitationem, velit voluptate numquam impedit, illum distinctio dolorem tempora iste. Tenetur optio cum iste quisquam necessitatibus numquam aut quo? Debitis nulla temporibus, nihil dolorem aspernatur dicta. Quisquam quidem doloribus qui autem aspernatur totam eum culpa harum, facere quas alias nesciunt repellat neque fugiat omnis molestiae placeat quia accusamus. Et incidunt ad officia provident!</p>
+
+        <p class="leading-5 text-gray-900 truncate hover:text-clip my-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim distinctio doloribus voluptas neque aut id consequuntur odio sunt doloremque illum voluptatibus iste unde assumenda aliquam aliquid ut, quae dolores dolorem dignissimos nostrum ipsam! Dolores quasi id ab nemo temporibus molestiae reprehenderit, similique labore veniam voluptates est exercitationem, velit voluptate numquam impedit, illum distinctio dolorem tempora iste. Tenetur optio cum iste quisquam necessitatibus numquam aut quo? Debitis nulla temporibus, nihil dolorem aspernatur dicta. Quisquam quidem doloribus qui autem aspernatur totam eum culpa harum, facere quas alias nesciunt repellat neque fugiat omnis molestiae placeat quia accusamus. Et incidunt ad officia provident!</p>
+
+        <p class="indent-12 leading-6 text-orange-900 uppercase hover:capitalize">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic enim distinctio <span class="underline decoration-wavy decoration-black">distinctio</span> voluptas neque aut id consequuntur odio sunt doloremque illum voluptatibus iste unde assumenda aliquam aliquid ut, quae dolores dolorem dignissimos nostrum ipsam! Dolores quasi id ab nemo temporibus molestiae reprehenderit, similique labore veniam voluptates est exercitationem, velit voluptate numquam impedit, illum distinctio dolorem tempora iste. Tenetur optio cum iste quisquam necessitatibus numquam aut quo? Debitis nulla temporibus, nihil dolorem aspernatur dicta. Quisquam quidem doloribus qui autem aspernatur totam eum culpa harum, facere quas alias nesciunt repellat neque fugiat omnis molestiae placeat quia accusamus. Et incidunt ad officia provident!</p>
+    </div>
+
+    <div class="my-10 practice_1 hyphens-auto bg-gradient-to-bl from-purple-500 to-blue-500 hover:bg-gradient-to-tr p-5 text-white text-lg border-4 border-gray-700 border-dashed bg-clip-padding">
+        Lorem ipsum dolor sit amet consecteturrrrrrrrrrrrrrrrrrrrrrrrrrrrr adipisicing elit. Tempora quasi, accusantium ut vitae sint sunt non eum quis dolores ea cupiditate corporis repellat error dolorem quos sapiente saepe qui voluptatum?
+    </div>
+    <div class="my-10 practice_1 hyphens-auto bg-gradient-to-b from-red-500 to-transparent-500 hover:bg-gradient-to-t p-5 text-white text-lg border-4 border-gray-700 border-dashed bg-clip-content shadow-2xl">
+        Lorem ipsum dolor sit amet consecteturrrrrrrrrrrrrrrrrrrrrrrrrrrrr adipisicing elit. Tempora quasi, accusantium ut vitae sint sunt non eum quis dolores ea cupiditate corporis repellat error dolorem quos sapiente saepe qui voluptatum?
+    </div>
+    <div class="my-10 p-5 hyphens-auto practice_1 border-4 border-gray-700 rounded-lg bg-gradient-to-r from-red-500 from-10% via-green-500 via-10% to-orange-500 to-80%">
+        Lorem ipsum dolor sit amet consecteturrrrrrrrrrrrrrrrrrrrrrrrrrrrr adipisicing elit. Tempora quasi, accusantium ut vitae sint sunt non eum quis dolores ea cupiditate corporis repellat error dolorem quos sapiente saepe qui voluptatum?
+    </div>
+
+    <div class="w-1/4 h-36 border-2 border-black mx-auto my-10 p-3 overflow-y-scroll">
+        <h3>My Information</h3>
+        <p class="hyphens-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis praesentium esse incidunt nemo nisi optio mollitia ipsum, veniam sapiente excepturi natus vitae? Eaque ipsam omnis natus earum deleniti reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem nisi, accusamus quod, harum vitae quas voluptatibus cum molestiae aspernatur doloribus deserunt veniam ullam nulla at perferendis! Vero, minus laboriosam.</p>
+    </div>
+
+    <div class="container w-9/12 mx-auto my-5 space-x-1 flex border-2 border-red-500 p-1">
+        <div class="div-1 w-4/12 border-2 border-black p-2 bg-gradient-to-r from-cyan-500 to-purple-500">
+            <h3>Md Arfatul Islam</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo eos mollitia. Voluptas placeat delectus, distinctio fuga nostrum fugiat in.</p>
+        </div>
+        <div class="div-1 w-4/12 border-2 border-black p-2 bg-gradient-to-r from-cyan-500 to-purple-500">
+            <h3>Md Arfatul Islam</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo eos mollitia. Voluptas placeat delectus, distinctio fuga nostrum fugiat in.</p>
+        </div>
+        <div class="div-1 w-4/12 border-2 border-black p-2 bg-gradient-to-r from-cyan-500 to-purple-500">
+            <h3>Md Arfatul Islam</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo eos mollitia. Voluptas placeat delectus, distinctio fuga nostrum fugiat in.</p>
+        </div>
+    </div>
+</body>
+</html>
