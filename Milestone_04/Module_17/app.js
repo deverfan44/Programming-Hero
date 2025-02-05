@@ -204,3 +204,84 @@ console.log(typeof diffNum);
 
 console.log(50/0); // Positive Infinity
 console.log(-50/0); // Negative Infinity
+
+
+console.log("\n\n");
+
+console.log("E");
+console.log(parseInt('20.5'));
+console.log(parseInt('E'));
+console.log("Erfan");
+console.log(parseInt(true));
+
+
+console.log("\n\n");
+
+console.log('20');
+console.log(parseInt('20'));
+console.log(Number('20'));
+console.log(Number('20.3'));
+
+console.log(parseInt(true));
+console.log(Number(true));
+console.log(Number(undefined));
+console.log(parseInt(undefined));
+console.log(parseInt(20.55));
+console.log(Number(20.55));
+console.log(Number('42px'));
+console.log(parseInt('42px'));
+console.log(parseInt(101,2));
+console.log(Number(101,2));
+
+
+console.log(parseInt(null));
+console.log(Number(null));
+console.log(Number(undefined));
+
+
+
+console.log("\n\n");
+
+console.log(20-10);
+console.log(20-'10');
+console.log('20'-'10');
+
+console.log(parseInt('42px')-'10');
+
+console.log(parseInt(''));
+console.log(Number(''));
+console.log(Number(null));
+console.log(parseInt(null));
+console.log(Number(undefined));
+console.log(parseInt(undefined));
+
+console.log(Number('0xFF'));
+console.log(parseInt('0xFF'));
+
+console.log(typeof null);
+console.log(typeof 0);
+
+
+console.log(isNaN(10));
+console.log(isNaN('10'));
+console.log(isNaN(parseInt('10')));
+console.log(isNaN(parseInt('10ab')));
+console.log(isNaN(parseInt('ab10')));
+console.log(isNaN(Number('10ab')));
+
+console.log(isNaN(4+'erfan'));
+
+
+console.log("\n\n");
+
+let biology = 75.25;
+let chemistry = 65;
+let physics = 80;
+let math = 35.45;
+let bangla = 99.50;
+
+let average = (biology+chemistry+physics+math+bangla)/5;
+console.log("The average is:", parseFloat(average.toFixed(2)));
+
+console.log(isNaN('11'));
+console.log(isNaN(2-10));
