@@ -50,16 +50,81 @@
 // Ternary Operator 
 
 // Are you Passed
-let marks = 45;
-let result = (marks >= 33) ? "pass":"Fail";
-console.log(result);
+// let marks = 45;
+// let result = (marks >= 33) ? "pass":"Fail";
+// console.log(result);
 
-// Can voteing 
-let age = 11;
-console.log((age >= 18) ? "You can vote":"You cannot attend voteing");
-age = 19;
-age >= 18 ? console.log("You can attend voteing"):console.log("You cannot attend voteing");
+// // Can voteing 
+// let age = 11;
+// console.log((age >= 18) ? "You can vote":"You cannot attend voteing");
+// age = 19;
+// age >= 18 ? console.log("You can attend voteing"):console.log("You cannot attend voteing");
 
-// Nested Ternary 
-let amount = 2800;
-(amount >= 2500) ? console.log((amount>=3000) ? "Can go Cox's and Inani": "Can go only cox's") :  console.log("Cannot go cox's");
+// // Nested Ternary 
+// let amount = 2800;
+// (amount >= 2500) ? console.log((amount>=3000) ? "Can go Cox's and Inani": "Can go only cox's") :  console.log("Cannot go cox's");
+
+
+// String and Backtic 
+
+// let  myName = 'Erfan';
+// console.log(myName);
+
+// myName = "Erfan";
+// console.log(myName);
+
+// myName = "Erfaan's";
+// console.log(myName);
+
+// myName = 'Erf"aa"n';
+// console.log(myName);
+
+// myName = 'Erfaan's'; // show an error
+// console.log(myName);
+
+// myName = 'Erfaan\'s';
+// console.log(myName);
+
+// myName = "Erfaan\"s";
+// console.log(myName);
+
+// Backtic 
+
+// let fullName = `Arfatul Islam`;
+// console.log(fullName);
+
+// let age = 23;
+// let myName = `Erfan ${age}`;
+// console.log(myName);
+
+// let firstName = "Arfatul";
+// let lastName = "Erfaan";
+// let fullName = `${firstName} ${lastName}`;
+// console.log(fullName);
+
+// let myName = "Erfan";
+// let age = 23;
+// let height = 5.7;
+// let food = "Burger";
+
+// // let details = "My name is " + myName + " My age is " + age + " My heigth is " + height + "In My favorite fodo is " + food;
+
+// // use backtick 
+// let details = `My name is ${myName} My age is ${age} My height is ${height}IN My favorite food is ${food}`;
+// console.log(details);
+
+
+
+// Null Data Type 
+
+// let user = prompt("Enter your name:");
+// if(user == ""){
+//     user = null;
+// }
+
+// if(user === null){
+//     console.log("No user is logged in");
+// }
+// else{
+//     console.log(user + " User is logged in");
+// }
