@@ -128,3 +128,31 @@
 // else{
 //     console.log(user + " User is logged in");
 // }
+
+
+// undefined 
+// let myName = "Erfaan";
+// myName = undefined;
+
+// console.log(myName);
+// console.log(typeof myName);
+
+
+// switch case 
+// let theme = null;
+// theme = prompt("Enter your theme: ");
+
+// switch(theme){
+//     case "dark":
+//         console.log("Active dark theme");
+//         break;
+//     case "light":
+//         console.log("Active light theme");
+//         break;
+//     case "blue":
+//         console.log("Active blue theme");
+//         break;
+//     default:
+//         console.log("Active system theme");
+// }
+
