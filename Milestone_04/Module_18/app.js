@@ -156,3 +156,43 @@
 //         console.log("Active system theme");
 // }
 
+
+// Type casting 
+
+// let firstNumber = prompt("Enter first number: ");
+// let secondNumber = prompt("Enter second number: ");
+// let sum = parseInt(firstNumber)+parseInt(secondNumber);
+// console.log(sum);
+// console.log(typeof sum);
+
+// let age = 23;
+// console.log(age);
+// console.log(typeof age);
+
+// age = String(age);
+// console.log(age);
+// console.log(typeof age);
+
+// let age = 23;
+// let newage = String(age);
+// console.log(newage);
+// console.log(typeof newage);
+
+// console.log(Boolean(12));
+// console.log(Boolean(0));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(""));
+// console.log(Boolean("e"));
+
+
+// let test = null;
+// console.log(typeof test);
+// console.log(test);
+
+// test = String(test);
+// console.log(typeof test);
+// console.log(test);
+
+console.log(parseInt(null));
+console.log(Number(null));
