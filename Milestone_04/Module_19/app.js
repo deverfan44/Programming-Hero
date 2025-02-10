@@ -146,3 +146,65 @@
 //     i++;
 // } while(i<10);
 
+// loop level 
+
+// simple 
+// for(let i=1; i<=3; i++) {
+//     console.log(i);
+//     for(let j=1; j<=5; j++){
+//         console.log("------", j);
+//         if(i==2 && j==3) break;
+//     }
+// }
+
+//level
+// firstlevel:
+// for(let i=1; i<=3; i++) {
+//     console.log(i);
+//     for(let j=1; j<=5; j++){
+//         console.log("------", j);
+//         if(i==2 && j==3) break firstlevel;
+//     }
+// }
+
+
+// let i=1;
+
+// leveltest:
+// while(i<=5){
+//     console.log(i);
+//     for(let j=10; j<=15; j++){
+//         if(i==3) break leveltest;
+//         console.log("-------------", j);
+//     }
+//     i++;
+// }
+
+
+// for in 
+// let arr = [10,20,30,40];
+// for(let x in arr) {
+//     console.log(x);
+// }
+
+// for(let x of arr) {
+//     console.log(x);
+// }
+
+
+// let obj = {
+//     name:"erfan",
+//     age: 23,
+//     marks: 88.8
+// }
+// for(let x in obj){
+//     console.log(x);
+// }
+// for(let x in obj){
+//     console.log(obj[x]);
+// }
+
+let fullName = "Md Arfatul Islam";
+for(let c of fullName){
+    console.log(c);
+}
