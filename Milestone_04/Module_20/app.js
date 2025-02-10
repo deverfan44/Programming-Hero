@@ -158,3 +158,57 @@
 // let newInfo = info.replaceAll("Erfan","Tanim");
 // console.log(info);
 // console.log(newInfo);
+
+
+
+
+// Object 
+// const Student = {
+//     name: 'Erfan',
+//     id: 'CSE032 08215',
+//     habit: 'Coding',
+//     marks: 80.5,
+//     bodyColor: 'black',
+//     subject: ['Biology','Chemistry','Physics'],
+// }
+
+// console.log(Student);
+// console.log(typeof Student);
+
+// console.log("\n");
+// console.log(Student.name);
+// console.log(Student.name.length);
+// console.log(typeof Student.name);
+// console.log(Student.subject);
+// console.log(typeof Student.subject);
+
+// console.log("\n");
+// console.log(Student.subject.length);
+// for(let sub of Student.subject){
+//     console.log(sub);
+// }
+
+
+// Primitive Data type vs Non primitive Data type 
+// 1) Primitivi Data type is Immutable and Non Primitive Data type is mutable 
+// 2) Primitive data type is fixed size and Non primitive data type is dynamic size 
+// 3) primitive cannot hold methods or properties but Non primitive hold 
+
+
+// primitive examples 
+// let a = 10
+// let b = a; console.log(b);
+// b = 20; console.log(b);
+// console.log(a);
+
+
+// non primitive examples 
+// let obj1 = {
+//     name: 'karim',
+//     age: 23,
+// }
+
+// let obj2 = obj1;
+// obj2.name = 'rahim';
+// console.log(obj2);
+// console.log(obj1);
