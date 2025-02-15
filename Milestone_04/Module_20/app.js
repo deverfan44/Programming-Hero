@@ -693,13 +693,13 @@ let myObj = {
     test: undefined,
 }
 
-// // difference between in and raw code 
+// difference between in and raw code 
 // console.log('test' in myObj);
-// if(booklist.test !== undefined) {
-//     console.log(booklist.test);
+// if(booklist.test === undefined) {
+//     console.log("test not exist")
 // }
 // else {
-//     console.log("test not exist")
+//     console.log(booklist.test);
 // }
 
 
@@ -743,13 +743,145 @@ let myObj = {
 // console.log(countrycode);
 
 
-let countrycode = {
-    "+93": 'Afganistan',
-    "+91": 'Indai',
-    "+880": 'Bangladesh',
-    "+41": 'Austria'
-}
-console.log(countrycode);
+// let countrycode = {
+//     "+93": 'Afganistan',
+//     "+91": 'Indai',
+//     "+880": 'Bangladesh',
+//     "+41": 'Austria'
+// }
+// console.log(countrycode);
 
-console.log(Number("+54"));
-console.log(Number("a54"));
+// console.log(Number("+54"));
+// console.log(Number("a54"));
+
+
+// Object comparison 
+// let obj1 = {
+//     myname: "Erfan",
+// }
+// let obj2 = {
+//     myname: "Erfan",
+// }
+
+// let obj3 = obj1;
+// console.log(obj1==obj2);
+// console.log(obj1==obj2);
+// console.log(obj1==obj3);
+
+// console.log(obj1.myname == obj2.myname);
+
+
+
+// Object Clone 
+let productsDetails1 = {
+    produntName: 'Laptop',
+    serialNo: '125562',
+    price: 45000,
+}
+
+// let productsDetails2 = productsDetails1;
+// console.log(productsDetails2);
+
+// // System 1 for clone
+// let productsDetails2 = {}
+// for(let key in productsDetails1) {
+//     productsDetails2[key] = productsDetails1[key];
+// }
+
+// productsDetails1.produntName = 'Clock';
+// console.log(productsDetails1);
+// console.log(productsDetails2);
+
+// Shortcut way of cloneing
+// let companyDetails = {
+//     companyName: 'IIT',
+//     established: '28 feb, 2002',
+// };
+
+// let productsDetails3 = {}
+// for(let key in productsDetails1) {
+//     productsDetails3[key] = productsDetails1[key];
+// }
+// for(let key in companyDetails) {
+//     productsDetails3[key] = companyDetails[key];
+// }
+
+// console.log(productsDetails3);
+
+// shortcut 
+let companyDetails = {
+    companyName: 'IIT',
+    established: '28 feb, 2002',
+};
+
+let productsDetails3 = {}
+
+Object.assign(productsDetails3, productsDetails1, companyDetails);
+
+console.log(productsDetails3);
+productsDetails3.produntName = 'clock';
+console.log(productsDetails3);
+console.log(productsDetails1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Delete duplicate from array // problem 1
+// const products = ['Laptop','phone','camera','laptop','phone','clock'];
+// const singleProducts = [];
+
+// for(let product of products) {
+//     if(!singleProducts.includes(product.toLowerCase())) {
+//         singleProducts.push(product.toLowerCase());
+//     }
+// }
+// console.log(singleProducts);
+
+
+
+// problem 2
+// const products = [
+//     {name: "Laptop", category: "Electronics"},
+//     {name: "T-Shirt", category: "Clothing"},
+//     {name: "Headphone", category: "Electronics"},
+//     {name: "Hoddy", category: "Clothing"},
+//     {name: "Clock", category: "Electronics"},
+// ]
+
+// const categroyWish = {
+//     electronics: [],
+//     clothing: [],
+// }
+// for(let item of products) {
+//     if(item.category == 'Electronics') {
+//         categroyWish.electronics.push(item.name);
+//     }
+//     else {
+//         categroyWish.clothing.push(item.name);
+//     }
+// }
+
+// console.log(categroyWish);
+
+
+
+// Problem 3
+
+// const str = "$24 9";
+// let sum = 0;
+// for(let val of str) {
+//     if( !(isNaN(val)) ) { //  && val !== " "
+//         sum += Number(val);
+//     }
+// }
+
+// console.log(sum);
