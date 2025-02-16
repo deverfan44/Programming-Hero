@@ -74,6 +74,8 @@
 // console.log("Your total amount is: ", totalAmout);
 
 
+
+
 // Write a function to convert temperature from Celsius to Fahrenheit. 
 // function celciusToFeren(celcius) {
 //     let ferenheight = (celcius * (9/5)) + 32;
@@ -82,6 +84,8 @@
 
 // console.log(celciusToFeren(32));
 // console.log(celciusToFeren(20));
+
+
 
 
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
@@ -101,6 +105,8 @@
 // console.log(findNumbers(arr,25));
 
 
+
+
 // Write a function to count the number of vowels in a string.
 // function vowelCount(str) {
 //     let count = 0;
@@ -116,6 +122,7 @@
 
 // let str = 'Erfaan';
 // console.log(vowelCount(str));
+
 
 
 // Write a function to find the longest word in a given string. 
@@ -136,6 +143,88 @@
 // console.log(longestWord(str));
 
 
+
+
 // Generate a random number between 10 to 20.
-console.log(Math.random());
-console.log((Math.random()*10)+10);
+// console.log(Math.random());
+// console.log((Math.random()*10)+10);
+
+
+
+// Explore Array 
+
+// let numbers = [10,20,30,40];
+// let leng = numbers.length;
+// console.log(Array.isArray(numbers));
+// console.log(Array.isArray(leng));
+
+// console.log(numbers[6]); // it's return undefined 
+
+
+// Array join 
+// let fruits = ['apple','mango'];
+
+// console.log(fruits.join());
+// console.log(fruits.join(" "));
+// console.log(fruits.join("-"));
+// console.log(fruits.toString());
+
+// Delete
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// delete fruits[1];
+// console.log(fruits);
+// console.log(fruits.length);
+// console.log(fruits.length);
+// console.log(fruits[1]);
+
+
+// slice 
+// let numbers = [10,20,30,40,50,60];
+// console.log(numbers.slice(2));
+// console.log(numbers.slice(1));
+// console.log(numbers.slice(2,4));
+// console.log(numbers.slice(0,-3));
+// console.log(numbers.slice(-1,-4));
+// console.log(numbers.slice(-1));
+// console.log(numbers.slice(-2));
+// console.log(numbers.slice(-3));
+
+
+// splice
+// let numbers = [10,20,30,40,50,60,70];
+// console.log(numbers.splice(1,3));
+// console.log(numbers);
+
+// let numbers = [10,20,30,40,50,60,70];
+// numbers.splice(2,1);
+// console.log(numbers);
+
+
+// toSpliced()
+// let numbers = [10,20,30,40,50,60,70];
+// console.log(numbers.toSpliced(2,3));
+// console.log(numbers);
+
+
+// indexof 
+// let numbers = [10,20,30,40,50,60,30,70,30];
+// console.log(numbers.indexOf(30));
+// console.log(numbers.indexOf(30,2));
+
+// Last index of
+let numbers = [10,20,30,10,40];
+console.log(numbers.lastIndexOf(10));
+let idx = numbers.lastIndexOf(10);
+console.log(numbers);
+numbers.splice(idx,1);
+console.log(numbers);
+
+// Form 
+// let str = "Hello Erfan";
+// let arr = Array.from(str);
+// console.log(arr);
+
+// reverse 
+// let numbers = [10,20,30,40];
+// console.log(numbers.reverse());
+// console.log(numbers);
