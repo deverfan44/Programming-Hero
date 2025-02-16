@@ -212,12 +212,12 @@
 // console.log(numbers.indexOf(30,2));
 
 // Last index of
-let numbers = [10,20,30,10,40];
-console.log(numbers.lastIndexOf(10));
-let idx = numbers.lastIndexOf(10);
-console.log(numbers);
-numbers.splice(idx,1);
-console.log(numbers);
+// let numbers = [10,20,30,10,40];
+// console.log(numbers.lastIndexOf(10));
+// let idx = numbers.lastIndexOf(10);
+// console.log(numbers);
+// numbers.splice(idx,1);
+// console.log(numbers);
 
 // Form 
 // let str = "Hello Erfan";
@@ -228,3 +228,82 @@ console.log(numbers);
 // let numbers = [10,20,30,40];
 // console.log(numbers.reverse());
 // console.log(numbers);
+
+
+
+// Problem Practice 2
+// Find the friend with the smallest name. if same size more, print last one
+// function smallestName(heights) {
+//     let count = heights.at(0).length; // height[0].length
+//     let small = heights.at(0);
+//     for(let item of heights) {
+//         if(count >= item.length) {
+//             small = item;
+//             count = item.length;
+//         }
+//     }
+//     return small;
+// }
+
+// const heights = ['rahim', 'robin','ran', 'rafi', 'ron', 'rashed'];
+// console.log(smallestName(heights));
+
+// Your task is to calculate the total budget required to buy electronic
+// let laptopPrice = 35000;
+// let tabletPrice = 15000;
+// let mobilePrice = 20000;
+// function calculateElectronicsBudget(laptop, tablet, mobile) {
+//     let forlaptop = laptop*laptopPrice;
+//     let fortablet = tablet*tabletPrice;
+//     let formobile = mobile*mobilePrice;
+    
+//     return forlaptop+fortablet+formobile;
+// }
+
+// console.log("Your total price is:", calculateElectronicsBudget(3,2,1));
+// console.log("Your total price is:", calculateElectronicsBudget(2,2,2));
+
+
+
+// You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
+
+// function findAveragePhonePrice(phones) {
+//     let sum = 0;
+//     let leng = phones.length;
+//     for(let item of phones) {
+//         sum += item.price;
+//     }
+//     return sum/leng;
+// }
+
+// const phones = [
+//     { model: "PhoneA", brand: "Iphone", price: 95000 },
+//     { model: "PhoneB", brand: "Samsung", price: 40000 },
+//     { model: "PhoneC", brand: "Oppo", price: 26000 },
+//     { model: "PhoneD", brand: "Nokia", price: 35000 },
+//     { model: "PhoneE", brand: "Iphone", price: 105000 },
+//     { model: "PhoneF", brand: "HTC", price: 48000 },
+// ];
+
+// console.log("Average is: ", findAveragePhonePrice(phones).toFixed(2));
+
+
+// For each employee their current salary is calculated by multiplying yearly increment with experience then adding the result to the starting salary. Now calculate is the total salary has to be provided by the company in a month.
+
+// function totalSalary(employees) {
+//     let total = 0;
+//     for(let employee of employees) {
+//         total += (employee.starting + (employee.increment * employee.experience));
+//     }
+
+//     return total;
+// }
+
+// const employees = [
+//     { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+//     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+//     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+//     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+// ];
+
+// console.log("Provided total salary in one month is: ", totalSalary(employees));
