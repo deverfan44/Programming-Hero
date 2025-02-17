@@ -809,23 +809,121 @@ let productsDetails1 = {
 // console.log(productsDetails3);
 
 // shortcut 
-let companyDetails = {
-    companyName: 'IIT',
-    established: '28 feb, 2002',
-};
+// let companyDetails = {
+//     companyName: 'IIT',
+//     established: '28 feb, 2002',
+// };
 
-let productsDetails3 = {}
+// let productsDetails3 = {}
 
-Object.assign(productsDetails3, productsDetails1, companyDetails);
+// Object.assign(productsDetails3, productsDetails1, companyDetails);
 
-console.log(productsDetails3);
-productsDetails3.produntName = 'clock';
-console.log(productsDetails3);
-console.log(productsDetails1);
-
-
+// console.log(productsDetails3);
+// productsDetails3.produntName = 'clock';
+// console.log(productsDetails3);
+// console.log(productsDetails1);
 
 
+// let Student1 = {
+//     name: 'Erfan',
+//     address: 'Hathazari',
+//     age: 23,
+//     bodyColor: 'black',
+//     isMale: true
+// }
+// let Student2 = Student1;
+// let Student2 = {};
+// Object.assign(Student2,Student1);
+// Student2.name = 'Karim';
+
+// console.log(Student1);
+// console.log(Student2);
+
+// let extrainfo = {
+//     nationality: 'Bangladeshi',
+//     religion: 'Islam',
+// }
+
+// Object.assign(Student2,extrainfo);
+// console.log(Student2);
+// console.log(Student1);
+
+
+// cloning some problem 
+// let products1 = {
+//     name: 'Laptop',
+//     model: 'HP',
+//     price: 45000,
+//     extrainfo: {
+//         color: ['black','red','blue'],
+//         companyAddress: 'japan',
+//     },
+// }
+// let products2 = {};
+// Object.assign(products2, products1);
+// // console.log(products2);
+// products2.extrainfo.companyAddress = 'China'; // it's change also products1 which is a problem
+// products2.price = 50000;
+// console.log(products2);
+// console.log(products1);
+
+// solve
+// let products1 = {
+//     name: 'Laptop',
+//     model: 'HP',
+//     price: 45000,
+//     extrainfo: {
+//         color: ['black','red','blue'],
+//         companyAddress: 'japan',
+//     },
+// }
+
+// let products2 = structuredClone(products1);
+// products2.extrainfo.companyAddress = 'China';
+// console.log(products1);
+// console.log(products2);
+
+// let car1 = {
+//     name: 'Toyota',
+//     brand: 'RV4',
+//     carStart: function() {
+//         console.log("Starting " + this.name + " Car");
+//     }
+// }
+
+// let car2 = {};
+// Object.assign(car2,car1);
+// car2.carStart(); // it's work because object.assign also copy function
+
+// let car2 = structuredClone(car1);
+
+// console.log(car2.brand); // show an error because structredclone don't copy function
+
+
+// Javascript Garbage Collection 
+// let user = {
+//     name: 'Erfan',
+//     age: 24,
+// }
+// console.log(user);
+// user = null; // fot this line javascript automatically delete previous created object 
+// console.log(null);
+
+// function myName() {
+//     console.log("Erfan");
+// }
+// // console.log(typeof myName);
+// console.log(typeof myName);
+
+
+// Circular Reference
+// let userDetails = {
+//     username: 'deverfan',
+//     name: 'Md Arfatul Islam Erfan',
+// }
+// userDetails.user = userDetails;
+
+// console.log(userDetails);
 
 
 
@@ -885,3 +983,24 @@ console.log(productsDetails1);
 // }
 
 // console.log(sum);
+
+
+// Delete duplicate from array // problem 1 // Delete form original array
+// const products = ['Laptop','phone','camera','laptop','phone','clock'];
+
+// function removeDuplicate(product) {
+//     let tmpArray = [];
+//     for(let i=0; i<product.length; i++) {
+//         if(!tmpArray.includes(product[i].toLowerCase())) {
+//             tmpArray.push(product[i].toLowerCase());
+//         }
+//         else {
+//             products.splice(i,1);
+//             i--; // it's a important logic in my mind
+//         }
+//     }
+// }
+
+// console.log(products);
+// removeDuplicate(products);
+// console.log(products);
