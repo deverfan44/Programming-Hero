@@ -1,4 +1,3 @@
-// Problem 1
 function calculateVAT(price) {
     if(typeof price !== "number" || price < 0) {
         return "Invalid";
@@ -9,7 +8,6 @@ function calculateVAT(price) {
 }
 
 
-// Problem 2
 function  validContact( contact ) {
     if(typeof contact !== "string") return "Invalid";
     
@@ -22,7 +20,6 @@ function  validContact( contact ) {
 }
 
 
-// Problem 3
 function  willSuccess( marks ) {
     if(!Array.isArray(marks)) return "Invalid"; 
 
@@ -36,11 +33,8 @@ function  willSuccess( marks ) {
     return (passCount>failCount) ? true : false;
 }
 
-
-
-// Problem - 4
 function  validProposal( person1 , person2 ) {
-    if(typeof person1 !== 'object' || typeof person2 !== 'object') return "Invalid";
+    if(typeof person1 !== 'object' || typeof person2 !== 'object' || Array.isArray(person1) || Array.isArray(person2)) return "Invalid";
     
     let ageDifference = Math.abs(person1.age - person2.age);
     if(person1.gender.toLowerCase() === person2.gender.toLowerCase() || ageDifference > 7) return false;
@@ -48,17 +42,13 @@ function  validProposal( person1 , person2 ) {
 }
 
 
-// Problem - 5
 function  calculateSleepTime( times ) {
-    // First Invalid Check
-    if(!Array.isArray(times)) return "Invalid";
-
     let totalSecond = 0;
     for(let item of times) {
-        // Second Invalid Check
         if(typeof item !== "number") return "Invalid";
         totalSecond += item;
     }
+
     let hour = parseInt(totalSecond/3600);
     let extraSecond = totalSecond%3600;
     let minute = parseInt(extraSecond/60);
