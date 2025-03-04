@@ -1,87 +1,97 @@
-// var element;
-// element = document;
-// console.log(element);
 
-// var elementAll = document.all;
-// console.log(elementAll);
-// console.log(elementAll[3]);
+function changeColor(){
+    const cards = document.getElementsByClassName('card');
+    for(const card of cards) {
+        card.style.backgroundColor = 'rgb(122, 183, 236)';
+    }
 
+    const cardTitle = document.querySelectorAll('.card_title h3');
+    for(const title of cardTitle) {
+        title.innerText = 'JavaScript';
+    }
 
-// document.title = 'Js Dom';
+    document.getElementById("header").classList.add('hide');
+}
 
-// var navBar = document.getElementsByTagName('nav');
-// console.log(navBar);
+function changeText() {
+    let text = document.getElementById('headBtn').innerText;
+    if(text.toLowerCase() === 'sign up') {
+        document.getElementById('headBtn').innerText = 'SignIn';
+    }
+    else {
+        document.getElementById('headBtn').innerText = 'Logout';
+    }
+}
 
-// navBar[0].style.backgroundColor = 'red';
-
-// console.log(navBar[0].innerHTML);
-
-
-// const last = document.getElementById("lastTest");
-// console.log(last);
-// console.log(last.innerText);
-// console.log(last.innerHTML);
-
-// const footer = document.getElementById('footer');
-// console.log(footer);
-// console.log(footer.innerHTML);
-// console.log(footer.innerText);
-
-// const cards = document.getElementsByClassName('card');
-// console.log(cards);
-// console.log(cards[0].innerHTML)
-// console.log(cards[0].innerText)
-
-// console.log(document.getElementById('card_box'));
-// console.log(document.getElementById('card_box').innerHTML);
-
-// console.log(document.getElementById('header').getAttribute('class'));
-// console.log(document.getElementById('header').getAttribute('id'));
-// console.log(document.getElementById('header').getAttributeNode('id'));
-// console.log(document.getElementById('header').getAttribute('title'));
-// console.log(document.getElementById('header').getAttributeNode('title'));
-
-
-// console.log(document.getElementById('header').attributes);
-// console.log(document.getElementById('header').attributes[1]);
-// console.log(document.getElementById('header').attributes[1].value);
-// console.log(document.getElementById('header').attributes[1].name);
-
-
-// document.getElementById('header').innerText = 'Erfaan\'s DOM';
-// document.getElementById('footer').innerHTML = "<h2>All reserverd by Md Arfatul Islam Erfan</h2>";
-
-// console.log(document.getElementById('header').getAttribute('class'));
-// document.getElementById('header').setAttribute('class', 'erfan');
-// console.log(document.getElementById('header').getAttribute('class'));
-// document.getElementById('header').setAttribute('title', 'Explore DOM');
-
-// document.getElementById('header').removeAttribute('class');
-
-
-
-// Query Selector 
-// const card = document.querySelector('.card');
-// card.style.backgroundColor = 'purple';
-// card.style.color = 'white';
-
-// const cards = document.querySelectorAll('.card');
-// console.log(cards);
-// for(let i=0; i<cards.length; i++) {
-//     if(i!==0) {
-//         cards[i].style.backgroundColor = 'orange';
-//     }
+// const backChange = document.getElementById('backColor');
+// backChange.onclick = function(){
+//     document.body.style.background = 'black';
 // }
+function bgBlack(){
+    document.body.style.background = 'black';
+}
+const backChange = document.getElementById('backColor');
+backChange.onclick = bgBlack;
 
-// document.querySelector('.card').className = 'testing';
 
-// console.log(document.querySelector(".card").getAttribute('class'));
+// Using AddEventListener 
+document.getElementById('purpleColor').addEventListener('click', function() {
+    document.body.style.background = 'purple';
+}
+);
 
-// document.querySelector('.testing').style.backgroundColor = 'tan';
+document.getElementById('greenColor').addEventListener('mouseover', ChangeGreen);
+function ChangeGreen() {
+    document.body.style.background = 'green';
+}
 
-// console.log(document.querySelector(".card_2").getAttribute('class'));
-// document.querySelector(".card_2").classList.add('div_2');
-// console.log(document.querySelector(".card_2").getAttribute('class'));
+document.getElementById('greenColor').addEventListener('mouseout', function ChangeDefault() {
+    document.body.style.background = 'white';
+});
+document.getElementById('greenColor').addEventListener('click', function ChangeDefault() {
+    document.body.style.background = 'red';
+});
 
-// document.querySelector('.card_2').classList.remove('card');
-// console.log(document.querySelector(".card_2").getAttribute('class'));
+
+const titleChange = document.querySelector('#service_section button');
+console.log(titleChange);
+
+titleChange.addEventListener('click', function() {
+    document.querySelector('.service_title h1').innerText = 'Best Products'
+
+})
+
+document.getElementById('inputBtn').addEventListener('click', function() {
+    const updateP = document.getElementById('updateName');
+    let inputname = document.getElementById('inputName');
+    updateP.innerText = inputname.value;
+})
+
+
+// System 1 
+document.getElementById('postBtn').addEventListener('click', function() {
+    if(document.getElementById('newCmnt').value != "") {
+        const newComment = document.getElementById('newCmnt').value;
+        const div = document.createElement('div');
+        const p = document.createElement('p');
+        p.innerText = newComment;
+        div.appendChild(p);
+        div.classList.add('commnet');
+
+        document.getElementById('commnet_box').appendChild(div);
+
+        // clean the text
+        document.getElementById('newCmnt').value = "";
+    }
+})
+
+
+// System 2 
+// document.getElementById('postBtn').addEventListener('click', function() {
+//     const newComment = document.getElementById('newCmnt').value;
+//     let test = `<div>
+//                     <p>${newComment}</p>
+//                 </div>`;
+
+//     document.getElementById('commnet_box').appendChild(test);
+// })

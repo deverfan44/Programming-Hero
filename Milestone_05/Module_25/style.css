@@ -1,6 +1,146 @@
-/* h1 {
-    background-color: aqua;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-ul li {
-    color: peru;
-} */
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+}
+.justify_between {
+    justify-content: space-between;
+}
+.align_center {
+    align-items: center;
+}
+
+
+/* Header section  */
+header {
+    padding: 10px 0px;
+    background-color: aliceblue;
+}
+.brand a {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.head_btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+
+/* card box  */
+.card_sectiom{
+    margin: 80px 0px;
+}
+.card_box{
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 30%;
+    padding: 30px 25px;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card .card_title h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.card .card_descrip p{
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+.card_btn{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* service  */
+#service_section{
+    text-align: center;
+    background-color: bisque;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 80px 0px;
+}
+.service_title{}
+.service_title h1{
+    font-size: 36px;
+}
+.service_description{
+    line-height: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.service_description p{}
+
+.backChange{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.form_div{
+    text-align: center;
+    margin: 40px 0px;
+}
+.form_div input{
+    padding: 10px;
+}
+.form_div input{
+    padding: 12px;
+}
+
+
+.comment_section{
+    margin: 80px 0px;
+}
+.commnet{
+    background-color: rgb(13, 252, 200);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.comment_push{
+    text-align: center;
+}
+textarea{
+    resize: none;
+    padding: 20px;
+    font-size: 22px;
+}

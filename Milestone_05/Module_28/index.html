@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Project</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- outfint google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="outfin-font bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-[#F4F5F7]">
+
+        <div class="min-h-screen flex flex-col justify-center">
+            <div class="login-div flex flex-col justify-center">
+                <div class="login-image h-[200px] overflow-hidden">
+                    <div class="login_curve_img relative flex justify-center">
+                        <img src="./images/bg.png" alt="" class="">
+                        <img src="./images/Group.png" class="absolute top-[15%] left-1/2 -translate-x-1/2" alt="">
+                    </div>
+                </div>
+    
+                <div class="login_form p-10 bg-white mx-5 rounded-2xl">
+                    <form action="#">
+                        <div class="tel_div flex flex-col gap-y-2">
+                            <label for="number">Mobile Number</label>
+                            <input type="number" id="number" placeholder="Enter your number" class="rounded-full py-3 px-4 bg-[#F4F5F7] focus:outline-none" required value="01315077224">
+                        </div>
+
+                        <div class="pin_div flex flex-col gap-y-2 mt-5">
+                            <label for="pin">4 digit pin</label>
+                            <input type="password" id="pin" placeholder="Enter your pin" class="rounded-full py-3 px-4 bg-[#F4F5F7] focus:outline-none" required value="1234">
+                        </div>
+
+                        <div class="login-btn mt-5">
+                            <button type="button" class="btn btn-primary w-full text-xl" id="login-btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- javascript link  -->
+    <script src="utilities/utilities.js"></script>
+    <script src="./script/login.js"></script>
+</body>
+</html>

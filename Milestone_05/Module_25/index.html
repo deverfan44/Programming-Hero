@@ -3,59 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour of DOM</title>
-    <style>
-        .headpart{
-            color: yellow;
-        }
-        .erfan{
-            color: yellow;
-        }
-    </style>
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header" class="headerPart headpart" title="This is head part">
-            <div id="brands">
-                Erfaan's
+    <header id="header">
+        <div class="wrapper">
+            <div class="flex justify_between align_center">
+                <div class="brand">
+                    <a href="#">Erfaan's</a>
+                </div>
+                <nav>
+                    <ul  class="flex justify_between align_center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="nav_btn">
+                    <button class="head_btn" onclick="changeText()" id="headBtn">Sign Up</button>
+                </div>
             </div>
-            <nav id="menuBar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Explore</a></li>
-                </ul>
-            </nav>
         </div>
-        
-        <div id="body">
-            <div id="card_box">
-                <div class="card card_1">
-                    <h2>Javascript</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus tenetur. Alias, natus veniam fugiat voluptas asperiores necessitatibus ut esse.</p>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="card_sectiom">
+                <div class="card_box flex justify_between align_center">
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="card_descrip">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad ducimus impedit ipsum, enim dignissimos reprehenderit tempore quidem obcaecati harum.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card card_2">
-                    <h2>Javascript</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus tenetur. Alias, natus veniam fugiat voluptas asperiores necessitatibus ut esse.</p>
+
+                <div class="card_btn">
+                    <button onclick="changeColor()" class="head_btn">Change Color</button>
                 </div>
-                <div class="card card_3">
-                    <h2>Javascript</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus tenetur. Alias, natus veniam fugiat voluptas asperiores necessitatibus ut esse.</p>
+            </section>
+
+            <section id="service_section">
+                <div class="service_title">
+                    <h1>Our Services</h1>
                 </div>
-            </div>
+                <div class="service_description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet quis illum numquam nesciunt minus rerum odio quod magni dolores, sunt aperiam. Impedit fuga reiciendis ab error aperiam veniam fugiat, obcaecati deserunt debitis adipisci vitae quae nisi nihil ipsum quis distinctio laudantium dolore atque! Reiciendis quam voluptas odit possimus sunt vero dolor ducimus voluptatum ut, atque ipsum excepturi laboriosam delectus praesentium libero maiores nisi minus. Dolore recusandae a inventore eum fuga iure, magni unde cupiditate! Animi repellat nostrum nam. Optio exercitationem esse laborum non quidem sit, impedit architecto est vitae, modi doloremque libero debitis minima commodi amet tempore blanditiis suscipit.</p>
+                </div>
+                <button class="head_btn">Change title</button>
+            </section>
         </div>
 
-        <div id="footer">
-            <div class="footerTitle">
-                <p>All reserverd by Md Arfatul Islam Erfan</p>
-            </div>
+        <div class="backChange">
+            <button id="backColor" class="head_btn">Background Black</button>
+            <button id="purpleColor" class="head_btn">Background Purple</button>
+            <button id="greenColor" class="head_btn">Background Green</button>
         </div>
 
-        <div id="lastTest">
-            My Name is lastTest
-        </div>
-    </div>
+        <section class="form_section">
+            <div class="wrapper">
+                <div class="form_div">
+                    <p id="updateName">No Name</p>
+                    <input type="text" name="" id="inputName" placeholder="Type your name">
+                    <button id="inputBtn" class="head_btn">Update</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="comment_section">
+            <div class="wrapper">
+                <div id="commnet_box">
+                    <div class="commnet">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nemo voluptates a corrupti aut facilis tempore, necessitatibus deserunt nulla earum? Reprehenderit commodi, iste quod quidem distinctio, molestiae cupiditate a suscipit dolorum voluptates velit quia. Illum!</p>
+                    </div>
+                    <div class="commnet">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nemo voluptates a corrupti aut facilis tempore, necessitatibus deserunt nulla earum? Reprehenderit commodi, iste quod quidem distinctio, molestiae cupiditate a suscipit dolorum voluptates velit quia. Illum!</p>
+                    </div>
+                    <div class="commnet">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nemo voluptates a corrupti aut facilis tempore, necessitatibus deserunt nulla earum? Reprehenderit commodi, iste quod quidem distinctio, molestiae cupiditate a suscipit dolorum voluptates velit quia. Illum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_push">
+                <!-- <form action="#"> -->
+                    <textarea cols="70" rows="5" id="newCmnt"></textarea>
+                    <div style="text-align: center">
+                        <button id="postBtn" class="head_btn">Post</button>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </section>
+    </main>
+
+
     <script src="app.js"></script>
 </body>
 </html>
