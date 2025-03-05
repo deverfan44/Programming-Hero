@@ -115,3 +115,64 @@
 // document.getElementById('titles').addEventListener("click", ()=>{
 //     console.log("Hello Javascript");
 // })
+
+// const friends = ["Rakib","Sakib","Jabbar","Halim"];
+// console.log(friends);
+// console.log(...friends);
+
+
+// function countFriends(...friends){ // it's received by an array
+//     console.log(...friends);
+//     console.log(friends);
+// }
+// countFriends("Rakib","Sakib","Jabbar","Halim");
+
+
+// const friends = ["Rakib","Sakib","Jabbar","Halim"];
+// const newArray = ["Hero Alom", friends];
+// // console.log(newArray);
+// for(let item of newArray){
+//     console.log(item);
+// }
+
+// const friends = ["Rakib","Sakib","Jabbar","Halim"];
+// const newArray = ["Hero Alom", ...friends];
+// console.log(newArray);
+
+// for(let item of newArray){
+//     console.log(item);
+// }
+
+
+
+// const numbers = [22,54,12,76,33,67];
+// const mxNumber = Math.max(...numbers);
+// console.log(mxNumber);
+// const mnNumber = Math.min(...numbers);
+// console.log(mnNumber);
+
+
+// Concate two array 
+// const arr1 = [2,3,4,5];
+// const arr2 = [6,7,8,9];
+// // const newArr = [...arr1, ...arr2];
+// // console.log(newArr);
+
+// const newArr = [arr1,arr2];
+// console.log(newArr);
+
+
+let student = {
+    name: "Erfan",
+    age: 24,
+    isMale: true
+}
+let info = {
+    nationality: "Bangladeshi",
+    religion: "Islam"
+}
+
+let newStu = {...student, ...info};
+console.log(newStu);
+
+
