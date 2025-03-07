@@ -368,30 +368,72 @@
 
 
 
-class Animal{
-    constructor(name,color){
+// class Animal{
+//     constructor(name,color){
+//         this.name = name;
+//         this.color = color;
+//     }
+//     sleeping() {
+//         console.log(`This ${this.name} is now sleeping in beding`);
+//     }
+//     getup() {
+//         console.log(`This ${this.name} is now getup`);
+//     }
+// }
+
+// class Horse extends Animal{
+//     constructor(name,color,runningHP){
+//         super(name, color);
+//         this.runningHP = runningHP;
+//     }
+//     sleeping(){
+//         console.log(`This ${this.name} is sleeping in standing`);
+//     }
+// }
+
+// const horse1 = new Horse('Kalamama', 'black', 746);
+// console.log(horse1);
+// horse1.getup();
+// horse1.sleeping();
+
+
+
+
+// this keyword 
+// const person = {
+//     myName: 'Erfan',
+//     getName: function(){
+//         console.log(this.myName);
+//     },
+// }
+
+// person.getName();
+
+
+
+// const myAge = 23;
+// console.log(this);
+// console.log(this.myAge);
+
+
+// Encapsulation 
+class User{
+    name;
+    phoneNumber;
+    #password; // "#" used for Encapsulation
+    constructor(name, phoneNumber, password) {
         this.name = name;
-        this.color = color;
+        this.phoneNumber = phoneNumber;
+        this.#password = password;
     }
-    sleeping() {
-        console.log(`This ${this.name} is now sleeping in beding`);
-    }
-    getup() {
-        console.log(`This ${this.name} is now getup`);
+
+    getPassWord() {
+        console.log(this.#password);
     }
 }
 
-class Horse extends Animal{
-    constructor(name,color,runningHP){
-        super(name, color);
-        this.runningHP = runningHP;
-    }
-    sleeping(){
-        console.log(`This ${this.name} is sleeping in standing`);
-    }
-}
+const user1 = new User('Erfan', '01705323117', 'deverfan44#');
+console.log(user1);
+console.log(user1.password); // it's show undefined because password insulated by encapsulation
 
-const horse1 = new Horse('Kalamama', 'black', 746);
-console.log(horse1);
-horse1.getup();
-horse1.sleeping();
+user1.getPassWord(); // it's show because it's called in class body
