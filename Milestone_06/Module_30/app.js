@@ -341,4 +341,108 @@ const vehicles = ['BMW','Suzuki','Mahindra Truck'];
 // Object.freeze(fruits);
 
 // fruits[1] = "jackfruits"; // it's not work because array is already freeze
-// console.log(fruits);
+// console.log(fruits);\
+
+
+
+
+// for of/ for in 
+
+// let student = {
+//     name: "Md Arfatul Islam",
+//     age: 24,
+//     isMale: true
+// }
+
+// for(let item of Object.entries(student)) {
+//     console.log(item);
+// }
+
+// for(let value of Object.values(student)) {
+//     console.log(value);
+// }
+// for(let key of Object.keys(student)) {
+//     console.log(key);
+// }
+
+
+// for(let item in student) {
+//     console.log(student[item]);
+// }
+
+
+// distructuring with for of 
+// let student = {
+//     name: "Md Arfatul Islam",
+//     age: 24,
+//     isMale: true
+// }
+
+// for(let [key,value] of Object.entries(student)) {
+//     console.log(`key: ${key} value: ${value}`);
+// }
+
+
+
+// Valueof 
+// const numbers = [10,20,30,40];
+// console.log(numbers);
+// console.log(...numbers);
+// console.log(numbers.valueOf());
+
+
+// const arr1 = [10,20,30,40];
+// const arr2 = arr1;
+
+// arr2[1] = 100;
+// console.log(arr1);
+
+// const arr1 = [10,20,30,40];
+// const arr2 = [];
+// Object.assign(arr2,arr1);
+// // const arr2 = [...arr1];
+
+// arr2[1] = 100;
+// console.log(arr1);
+// console.log(arr2);
+
+
+let student1 = {
+    name: "Erfan",
+    age: 24,
+    info: {
+        address: "hathazari",
+    },
+    fullname: function() {
+        return `Md ${this.name}`
+    }
+}
+let student2 ={...student1};
+console.log(student1);
+console.log(student2);
+
+student2.name = "Tanim";
+console.log(student1);
+console.log(student2);
+
+
+student2.info.address = "Roazan";
+console.log(student1);
+
+
+console.log(student1.fullname());
+
+
+// practice 
+// const oddNumbers = arr => {
+//     let odd = [];
+//     for(let val of arr) {
+//         if(val%2 != 0) {
+//             odd.push(val);
+//         }
+//     }
+//     return odd;
+// }
+
+// console.log(oddNumbers([10,11,23,16,19]));
+// console.log(...oddNumbers([1,2,3,4,5,6]));
