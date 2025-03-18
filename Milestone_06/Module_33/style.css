@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headbtn {
+    text-align: center;
+    margin: 20px 0px;
+}
+#loadUserBtn {
+    border: none;
+    font-size: 20px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    background: cornflowerblue;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#usersContainer {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.test {
+    font-size: 24px;
+    width: 30%;
+}
+.divcolor {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+}

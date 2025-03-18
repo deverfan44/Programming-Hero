@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Add to cart</legend>
+        <form action="#">
+            <input type="text" name="productname" id="productName" placeholder="product name"><br><br>
+            <input type="text" name="quantity" id="productQuantity" placeholder="Enter quantity">
+            <button id="addBtn">Add</button>
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+
+    <div>
+        <ul class="cart-container" id="cartContainer">
+        </ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
